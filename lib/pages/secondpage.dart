@@ -7,6 +7,16 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.green,
+      child: ListView.builder(
+        itemCount: 10,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(
+              'Hi',
+            ),
+          );
+        },
+      ),
     );
   }
 }
